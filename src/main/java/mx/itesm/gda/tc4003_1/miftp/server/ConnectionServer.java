@@ -17,8 +17,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  *
@@ -26,7 +26,7 @@ import org.apache.commons.logging.LogFactory;
  */
 public class ConnectionServer implements Runnable {
 
-    private static final Log LOGGER = LogFactory.getLog(ConnectionServer.class);
+    private static final Logger LOGGER = getLogger(ConnectionServer.class);
 
     private static final String CHARSET = "UTF-8";
 

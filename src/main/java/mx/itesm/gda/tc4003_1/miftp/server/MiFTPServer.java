@@ -8,8 +8,8 @@ package mx.itesm.gda.tc4003_1.miftp.server;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  *
@@ -17,7 +17,7 @@ import org.apache.commons.logging.LogFactory;
  */
 public class MiFTPServer {
 
-    private static final Log LOGGER = LogFactory.getLog(MiFTPServer.class);
+    private static final Logger LOGGER = getLogger(MiFTPServer.class);
 
     /**
      * Método principal para la ejecución del servidor.
